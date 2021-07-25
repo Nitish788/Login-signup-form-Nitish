@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(221, 234, 233);
+}
+
+#container {
+    border: 1px;
+    width: 50%;
+    margin: 100px 440px;
+    height: 500px;
+}
+
+#mod {
+    background-color: rgb(255, 115, 0);
+    padding: 20px;
+    color: wheat;
+    float: left;
+}
+
+input[type=text] {
+    padding: 7px;
+}
+
+input[type=email] {
+    padding: 7px;
+    width: 58.5%;
+}
+
+input[type=password] {
+    padding: 7px;
+    width: 58.5%;
+}
+
+input[type=date] {
+    padding: 7px;
+    width: 58.5%;
+}
+
+img {
+    width: 80px;
+    height: 40px;
+    margin: 17px;
+}
+
+#head {
+    background-color: rgb(255, 115, 0);
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a {
+    border: 2px solid;
+    text-decoration: none;
+    color: rgb(188, 235, 188);
+    float: right;
+    margin: 20px 100px;
+    width: 110px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    width: 58.5%;
+    padding: 8px;
+    background-color: rgb(36, 192, 5);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+li {
+    float: left;
+    margin: 15px;
+    cursor: pointer;
+}
