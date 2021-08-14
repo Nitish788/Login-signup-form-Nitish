@@ -22,23 +22,23 @@ body {
     float: left;
 }
 
-input[type=text] {
-    padding: 7px;
+input[type="text"] {
+    padding: 12px;
 }
 
-input[type=email] {
-    padding: 7px;
-    width: 58.5%;
+input[type="email"] {
+    padding: 12px;
+    width: 61.5%;
 }
 
-input[type=password] {
-    padding: 7px;
-    width: 58.5%;
+input[type="password"] {
+    padding: 12px;
+    width: 61.5%;
 }
 
-input[type=date] {
-    padding: 7px;
-    width: 58.5%;
+input[type="date"] {
+    padding: 12px;
+    width: 61.5%;
 }
 
 img {
@@ -68,8 +68,8 @@ a {
 }
 
 button {
-    width: 58.5%;
-    padding: 8px;
+    width: 61.5%;
+    padding: 12px;
     background-color: rgb(36, 192, 5);
     cursor: pointer;
     border-radius: 8px;
