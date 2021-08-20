@@ -19,7 +19,13 @@ Marketing is not a work
     <div id="header">
       <form action="xyz.php">
         <div>
-          <input type="email" name="youremail" placeholder="E-mail" required />
+          <input
+            type="email"
+            name="youremail"
+            placeholder="E-mail"
+            pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+            required
+          />
         </div>
         <br />
         <div>
@@ -28,12 +34,21 @@ Marketing is not a work
             name="password"
             placeholder="Password"
             minlength="8"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Should contain 1UPPERCASE, 1lowercase, 1number and minimum length is 8"
             required
           />
         </div>
         <br />
         <div id="check">
-          <input type="checkbox" name="check" checked />Remember me
+          <label
+            ><input
+              type="checkbox"
+              name="check"
+              checked
+              class="largecheck"
+            />Remember me</label
+          >
         </div>
         <div>
           <button type="submit">Sign in</button>

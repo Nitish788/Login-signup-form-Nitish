@@ -24,12 +24,13 @@
                 <input type="text" name="yourname" placeholder="Name" required>&nbsp;&nbsp;<input type="text" name="last" placeholder="Surname" required>
             </div><br>
             <div>
-                <input type="email" name="youremail" placeholder="E-mail" required>
+                <input type="email" name="youremail" placeholder="E-mail" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+                    title="Should contain @" required>
             </div><br>
             <div>
-                <input type="password" name="pass" placeholder="New Password" required minlength="8"></div><br>
+                <input type="password" name="pass" placeholder="New Password" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Should contain 1UPPERCASE, 1lowercase, 1number and minimum length is 8" required></div><br>
             <div>
-                <input type="date" name="date" placeholder="Birthday" required>
+                <input type="date" name="date" placeholder="Birthday" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31)) " required>
             </div><br>
             <div>Gender <br>
                 <label><input type="radio" name="yourgender">Male</label> &nbsp;&nbsp;&nbsp;<label><input type="radio" name="yourgender">Female</label>&nbsp;&nbsp;&nbsp;
@@ -39,12 +40,12 @@
                 <label><input type="checkbox" name="agree" checked required>I accept all term and condition of Modicare Consultant.</label>
             </div><br>
             <div>
-                <button type="submit">Sign up</button>
+                <button type="submit ">Sign up</button>
             </div>
         </div>
     </form>
     <footer>
-        <ul type="none">
+        <ul type="none ">
             <li>Home</li>
             <li>About</li>
             <li>Products</li>
